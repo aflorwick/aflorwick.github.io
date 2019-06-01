@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Practice </title>
+    <meta charset="utf-8">
+    <meta name="description" content="My first Portfolio">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="Alyssa Florwick">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style type="text/css">
+      h1 {
+          color: rgb(8, 56, 51);
+          text-align: left;
+          font-size: 2.3rem;
+          font-family: 'Montserrat', sans-serif;
+      }
+      body {
+        background-image: url(images/grass1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
+      .buffer {
+        padding: 35px;
+      }
+
+      .backdrop {
+          border: 1px solid white;
+          background-color:rgba(158, 158, 158, 0.60);
+          padding: 5px 0 0 1%;
+          margin: 0;
+          border-radius: 5px;
+      }
+      .document {
+        width:95%;
+        padding: 2%;
+        margin: auto;
+      }
+      .clear {
+        list-style-type: none;
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: rgba(29, 28, 28, 0.81);
+        padding: 15px;
+        width: 100%;
+        overflow: auto;
+        position: fixed;
+        margin-top: 0;
+      }
+      li {
+        float: left;
+        padding: 0 15px 0 15px;
+/*look up flexbox */
+      }
+      li a {
+        display: block;
+        text-decoration: none;
+      }
+
+      /* Medium screens */
+      @media all and (max-width: 800px) {
+        .clear {
+          list-style-type: none;
+          clear: both;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          color: white;
+          font-weight: bold;
+          font-size: 1.2em;
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+          background-color: rgba(29, 28, 28, 0.81);
+          padding: 15px;
+          width: 100%;
+          overflow: auto;
+          position: fixed;
+          margin-top: 0;
+        }
+
+        .document {
+          width:95%;
+          padding: 2%;
+          margin: auto;
+        }
+
+      }
+
+      /* Small screens */
+      @media all and (max-width: 500px) {
+        .buffer {
+          padding: 30px;
+        }
+
+        h1 {
+            color: rgb(8, 56, 51);
+            text-align: left;
+            font-size: 8vw;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .document {
+          width:95%;
+          padding: 2%;
+          margin: auto;
+        }
+
+        #Index {
+          grid-area: Index;
+        }
+        #Portfolio {
+          grid-area: Portfolio;
+        }
+        #Resume {
+          grid-area: Resume;
+        }
+        #Publications {
+          grid-area: Publications;
+        }
+        #Projects {
+          grid-area: Projects;
+        }
+        #Contact {
+          grid-area: Contact;
+        }
+
+        li {
+          padding: 5px 0 5px 0;
+  /*look up flexbox */
+        }
+        li a {
+          text-decoration: none;
+        }
+
+        .clear {
+          list-style-type: none;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: auto auto;
+          grid-template-areas:
+            "Index Portfolio Resume"
+            "Publications Projects Contact";
+          color: white;
+          font-weight: bold;
+          font-size: 0.85em;
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+          background-color: rgba(29, 28, 28, 0.81);
+          padding: 0;
+          width: 100%;
+          position: fixed;
+          margin-top: 0;
+        }
+
+      }
+
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        color: #bb0daa;
+      }
+      a:active {
+        color: green;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="blankBox">
+    </div>
+    <nav role='navigation' class="navbar">
+      <ul class="clear">
+        <li id="Index"><a href="index.html">Home</a></li>
+        <li id="Portfolio"><a href="Portfolio.html">Portfolio</a></li>
+        <li id="Resume"><a href="Resume.html">Resume</a></li>
+        <li id="Publications"><a>Publications</a></li>
+        <li id="Projects"><a>Projects</a></li>
+        <li id="Contact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <body>
+    <div class="buffer">
+    </div>
+    <div class="backdrop">
+
+        <h1 class="Title">Resume</h1>
+        <div class="resume">
+          <img class="document" src="images/Resume-1.jpg" alt="resume page 1"/>
+          <img class="document" src="images/Resume-2.jpg" alt="resume page 1"/>
+          <img class="document" src="images/Resume-3.jpg" alt="resume page 1"/>
+          <img class="document" src="images/Resume-4.jpg" alt="resume page 1"/>
+        </div>
+    </div>
+
+  </body>
+</html>
